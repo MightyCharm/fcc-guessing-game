@@ -50,7 +50,6 @@ def load_scores():
     try:
         with open("scores.txt", "r") as file:
             scores = file.readlines()
-            print(scores)
     except (FileNotFoundError, PermissionError):
         scores = []   
     if len(scores) <= 0:

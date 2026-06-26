@@ -1,1 +1,12 @@
 Tom,80
+Bob,40
+Maria,70
+Sebastian,100
+Jimmy,10
+Micha,60
+Peter,20
+Thomas,90
+Lena,50
+Janosch,30
+Micha,40
+Micha,30
