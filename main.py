@@ -13,7 +13,7 @@ def get_user_name():
         if len(name) > 15:
             print("Name was too long. Please stay under 15 characters.\n")
         elif len(name) <= 0:
-            print("No Input.\n")
+            print("No input.\n")
         else:
             return name
 
@@ -23,10 +23,10 @@ def get_user_guess():
             guess = int(input("Please guess the secret number\n=> "))
             break
         except KeyboardInterrupt:
-            print("\nGame Stopped by user.")
+            print("\nGame stopped by user.")
             exit()
-        except:
-            print("Invalid Input!\n")
+        except ValueError:
+            print("Invalid input!\n")
     return guess
 
 def ask_to_play_again():
@@ -37,7 +37,7 @@ def ask_to_play_again():
         elif user_input == "n" or user_input == "no":
             return False
         else:
-            print("Invalid Input!")
+            print("Invalid input!")
 
 def get_random_number(min, max):
     return random.randint(min, max)
